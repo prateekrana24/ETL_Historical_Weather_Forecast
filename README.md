@@ -38,3 +38,13 @@ The forecasted temperature (in degrees Celsius) for the following day at noon
 Here is an example of what the the resulting weather report should look like:
 
 ![image](https://github.com/prateekrana24/ETL_Historical_Weather_Forecast/assets/88931114/a218a176-277d-47d7-955e-d2a0f10029da)
+
+If you want to see the current weather of Casablanca, run the following line:
+
+- ./rx_poc.sh
+
+To create a Cron job that runs the script, use the following lines:
+
+- crontab -e
+
+- 0 8 * * * /home/project/rx_poc.sh
